@@ -10,7 +10,7 @@ install:
 
 build_script:
 
-  - msbuild 
+  - msbuild PruebaAppVeyor.sln /p:Configuration=Release /p:Platform="Any CPU") 
 
 
 test: off
