@@ -1,0 +1,16 @@
+platform:
+  - x64
+
+cache:
+
+
+install:
+
+  - nuget restore src/SmartStoreNET.sln
+
+build_script:
+
+  #- cmd: msbuild C:\projects\examenfinal\src\SmartStoreNET.sln /p:Configuration=Debug /p:Platform="Any CPU")
+
+
+test: off
