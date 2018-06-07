@@ -10,7 +10,7 @@ install:
 
 build_script:
 
-  #- cmd: msbuild C:\projects\examenfinal\src\SmartStoreNET.sln /p:Configuration=Debug /p:Platform="Any CPU")
+  - msbuild 
 
 
 test: off
