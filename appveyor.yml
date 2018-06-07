@@ -6,7 +6,7 @@ cache:
 
 install:
 
-  - nuget restore src/SmartStoreNET.sln
+  - nuget restore PruebaAppVeyor.sln
 
 build_script:
 
