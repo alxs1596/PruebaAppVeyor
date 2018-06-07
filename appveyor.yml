@@ -8,9 +8,14 @@ install:
 
   - nuget restore PruebaAppVeyor.sln
 
+before_build:
+  # Display .NET Core version
+  - cmd: dotnet --version
+  # Display minimal restore text
+  - cmd: dotnet restore PruebaAppVeyor/PruebaAppVeyor.csproj --verbosity m
+
 build_script:
-
-  - msbuild PruebaAppVeyor.sln /p:Configuration=Debug /p:Platform="Any CPU") 
-
+  # output will be in ./src/bin/debug/netcoreapp1.1/publish
+  - cmd: dotnet publish PruebaAppVeyor/PruebaAppVeyor.csproj
 
 test: off
